@@ -1,0 +1,58 @@
+/* RGB PALETTE 
+#A0A4B8 - grey
+#7293A0 - blue
+#45B69C green
+#E6E6EA light grey
+F4F4F8 white
+*/
+
+/***********************************
+Global styles
+************************************/
+body{
+    font-family: 'News Cycle', sans-serif;
+   
+}
+
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+h1{
+    font-size: 80px;
+}
+h2{
+    font-size: 40px;
+}
+a{
+    color: #45B69C;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/***********************************
+Header and footer
+************************************/
+header, footer{
+    background:#45B69C;
+    color: #E6E6EA
+}
+
+header h1, header h2 {
+    color: #F4F4F8;
+    
+}
+/***********************************
+Work Experience
+************************************/
+.work{
+    background: #7293A0;
+}
+/***********************************
+Education 
+************************************/
+.education{
+   
+    background: #A0A4B8;
+}
