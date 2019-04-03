@@ -9,6 +9,13 @@ F4F4F8 white
 /***********************************
 Global styles
 ************************************/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body{
     font-family: 'News Cycle', sans-serif;
    margin: 0;
@@ -36,6 +43,19 @@ a:hover{
     max-width: 950px;
     margin: 0 auto;
     padding: 50px;
+    overflow: auto;
+}
+
+.col-narrow{
+    width: 30%;
+    float: left;
+    min-height: 175px;
+}
+.col-wide{
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 175px;
 }
 /***********************************
 Header and footer
@@ -48,7 +68,14 @@ header, footer{
 /*header*/
 header h1, header h2 {
     color: #F4F4F8;
+    margin: 0;
 }
+
+
+.profile-img{
+    border-radius: 50%;
+}
+
 /*footer*/
 footer{
     text-align: center;
