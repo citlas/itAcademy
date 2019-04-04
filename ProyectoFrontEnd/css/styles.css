@@ -1,0 +1,192 @@
+/* 
+CSS RESET!!!
+
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************************
+BOX MODEL FIX
+**************************/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /***********************
+  Global
+  **************************/
+  body{
+      color: lightslategray;
+      font-family: 'Assistant', sans-serif;
+  }
+  a{
+    text-decoration: none;
+    color: lightslategray;
+  }
+  
+   /***********************
+  Header (logo, buscar y login)
+  **************************/
+  header, .logo img, header form{
+      height: 100px;
+      float: left;
+  }
+
+  header {
+      width: 90%;
+  }
+
+ .loginButton, header form{
+      float: right;
+  }
+
+  header form {
+      width: 60%;
+  }
+
+  .loginButton {
+      width: 10%;
+      margin: 2% 0;
+      border-radius: 25px; 
+  }
+
+  form {
+      padding: 2% 0;
+      
+  }
+.searchThis{
+    width: 60%;
+    border: none;
+}
+.submitSearch{
+    width: 30%;
+    border-radius: 25px; 
+}
+
+   /***********************
+  Nav (categorias & shopping bag)
+  **************************/
+  nav{
+      clear: both;
+      height: 80px;
+      float: left;
+      width: 90%;
+     margin: 0 auto;
+  }
+
+  .main-menu{
+      margin-left: 10px;
+  }
+  .main-menu a{
+      float: left;
+      width: 12%;
+
+  }
+
+  .main-menu .shoppingBag {
+      float: right;
+  }
+   /***********************
+  Article Ofertas (dia, semana y mes)
+  **************************/
+  .ofertas, .topCharts{
+    clear: both;
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .ofertas section{
+      text-align: center;
+      overflow: auto;
+      position: relative;
+  }
+
+  .ofertas section h2{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: white;
+  }
+
+  
+   /***********************
+  Article topCharts (ventas, recomendados y novedades)
+  **************************/
+  .topCharts{
+    clear: both;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .anotherTop, .infoFooter{
+      width: 30%;
+      padding: 3%;
+      float: left;
+      
+  }
+  .topCharts section ul{
+    float: left;
+    
+     
+  }
+   /***********************
+  Footer (nosotros, contacto y ayuda)
+  **************************/
+  footer{
+    clear: both;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  footer a {
+    display: inline-block;
+  }
