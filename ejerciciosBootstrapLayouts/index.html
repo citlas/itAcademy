@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <link rel="stylesheet"  href="style.css">
 
     <title>Bootstrap 4 Layouts</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".site-nav" data-offset="55"><!--el offset es para que el scrollspy tome en cuenta el ancho del nav-->
     <header id="page-hero" class="site-header">
-        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark">
+        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
             <div class="container-fluid"><!--usar container para que no se vaya todo hasta la izquierda y quede mejor alineado al grid y usar container fluid para que uno se vaya a la izquierda y los otros a la derecha-->
                 
                 <a class="navbar-brand" href="#page-hero"><i class="fas fa-cube"></i>Layout Components</a><!--ponemos primero este para que salga siempre a la izq-->
@@ -31,7 +33,7 @@
                         <a class="nav-item nav-link" href="#page-photogrid">grid</a>
                         <a class="nav-item nav-link" href="#page-carousel">carousel</a>
                         <a class="nav-item nav-link" href="#page-nested">nested</a>
-                        <a class="nav-item nav-link" href="#page-icons">Icons</a>
+                        <a class="nav-item nav-link" href="#page-iconcolumns">Icons</a>
                         <a class="nav-item nav-link" href="#page-floater">floater</a>
                         <a class="nav-item nav-link" href="#page-cards">cards</a>
                     </div>
@@ -44,7 +46,7 @@
         <section class="layout-hero d-flex align-items-center text-light text-center">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-11 col-sm-10 col-md-8">
+                    <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
                         <h3 class="page-section-title">Bootstrap 4 Layouts</h3>
                         <p class="page-section-text"> This layout uses multiple column rules so that how many columns each group takes dependes on the width of the browser</p>  
                     </div><!--end col-->
@@ -64,63 +66,87 @@
             <section class="layout-multicolumn container">
                 <div class="row justify-content-center family-sans text-uppercase">
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster01.svg" href="#">
                         <img class="layout-image"src="img/monster01_tn.svg" alt="Monster Image 01">
                         <h5 class="layout-title pt-2">Mingle</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster02.svg" href="#">
                         <img class="layout-image"src="img/monster02_tn.svg" alt="Monster Image 02">
                         <h5 class="layout-title pt-2">Yodel</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster03.svg" href="#">
                         <img class="layout-image"src="img/monster03_tn.svg" alt="Monster Image 03">
                         <h5 class="layout-title pt-2">Squido</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster04.svg" href="#">
                         <img class="layout-image"src="img/monster04_tn.svg" alt="Monster Image 04">
                         <h5 class="layout-title pt-2">Spook</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster05.svg" href="#">
                         <img class="layout-image"src="img/monster05_tn.svg" alt="Monster Image 05">
                         <h5 class="layout-title pt-2">Melville</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster06.svg" href="#">
                         <img class="layout-image"src="img/monster06_tn.svg" alt="Monster Image 06">
                         <h5 class="layout-title pt-2">Filo</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster07.svg" href="#">
                         <img class="layout-image"src="img/monster07_tn.svg" alt="Monster Image 07">
                         <h5 class="layout-title pt-2">Blade</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster08.svg" href="#">
                         <img class="layout-image"src="img/monster08_tn.svg" alt="Monster Image 08">
                         <h5 class="layout-title pt-2">Timber</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster09.svg" href="#">
                         <img class="layout-image"src="img/monster09_tn.svg" alt="Monster Image 09">
                         <h5 class="layout-title pt-2">Skedaddle</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster10.svg" href="#">
                         <img class="layout-image"src="img/monster10_tn.svg" alt="Monster Image 10">
                         <h5 class="layout-title pt-2">Smiley</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster11.svg" href="#">
                         <img class="layout-image"src="img/monster11_tn.svg" alt="Monster Image 11">
                         <h5 class="layout-title pt-2">Frex</h5>
+                        </a>
                     </section>
             
                     <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                        <a  data-toggle="modal" data-target="#site-modal" data-highres="img/monster12.svg" href="#">
                         <img class="layout-image"src="img/monster12_tn.svg" alt="Monster Image 12">
                         <h5 class="layout-title pt-2">Drift</h5>
+                        </a>
                     </section>
                 </div>
              
@@ -139,7 +165,7 @@
     
         <section class="layout-media container my-5">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-8 layout-animation invisible">
                     <section class="media">
                             <img class="layout-image" src="img/media01.gif" alt="Media Image 01">
                             <div class="media-body">
@@ -412,10 +438,69 @@
         </section>
     </footer>
 
+    <article id="site-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <img data-dismiss="modal" class="img-fluid" src="#" alt="Modal Photo">
+            </div>
+        </div>
+    </article>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+    $(function(){
+
+var topoffset=55;
+//Use smooth scrolling when clicking on navigation
+$('.navbar a[href*=\\#]:not([href=\\#])').click(function() {
+    if (location.pathname.replace(/^\//,'') === 
+      this.pathname.replace(/^\//,'') && 
+      location.hostname === this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-topoffset+2
+        }, 500);
+        return false;
+      } //target.length
+    } //click function
+  }); //smooth scrolling
+
+
+/*scrollspy*/
+    $(window).on('activate.bs.scrollspy', 
+    function(){
+        var hash = $('.site-nav')
+        .find('a.active')
+        .attr('href');
+
+        if (hash !== '#page-hero'){
+            $('header nav').addClass('inbody');
+        } else {
+            $('header nav').removeClass('inbody');
+        }
+
+        $('#page-media .layout-animation').css(
+            'visibility: hidden'
+        );
+        if (hash === '#page-media'){
+            $('#page-media .layout-animation').addClass('animated fadeInRight');
+        }
+    });
+
+/*Modal*/
+        $('#site-modal').on('show.bs.modal', function(event){
+            $(this)
+            .find('.modal-content img')
+            .attr('src', $(event.relatedTarget).data('highres'));/*va a reemplazar lo que haya en src de la img por esto*/
+        });
+    });
+    </script>
   </body>
 </html>
