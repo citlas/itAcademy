@@ -22,7 +22,7 @@
     
     <header>
       <!--logo, buscar y login-->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
         <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo Mis Libros"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
               <a class="nav-link" href="#categorias">Categorias</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#ofertas">Ofertas</a>
+                <a class="nav-link" href=".ofertas">Ofertas</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#topCharts">Top</a>
@@ -45,14 +45,53 @@
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="loginButton" type="button">Identíficate</button>
           </form>
         </div>
       </nav>
     </header>
+
+    <!--categorias -->
+    <div id="categorias" class="categorias container">
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#second" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Literatura y ficción</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Infantil</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Juvenil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">De texto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Papelería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ver todas las categorías</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shopping bag</a>
+                </li>
+          </ul>
+        
+        </div>
+      </nav>
+    </div>
     
     <main role="main">
     
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <!--ofertas-->
+     <h2 class="display1 text-black">Ofertas que te pueden interesar</h2>
+      <div id="myCarousel" class="ofertas carousel slide" data-ride="carousel">
+          
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -60,30 +99,31 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            {% include icons/placeholder.svg width="100%" height="100%" background="#777" color="#777" text=" " title=" " %}
+              <img src="https://picsum.photos/950/250" alt="Imagen de oferta del día">
+              
             <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>Example headline.</h1>
+              <div class="carousel-caption text-right">
+                  <h2>Ofertas del día - Para leer este fin de semana</h2>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            {% include icons/placeholder.svg width="100%" height="100%" background="#777" color="#777" text=" " title=" " %}
+              <img src="https://picsum.photos/950/250" alt="Imagen de oferta del día">
             <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
+              <div class="carousel-caption text-right">
+                  <h2>Ofertas de semana - Para tus vacaciones de semana Santa</h2>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            {% include icons/placeholder.svg width="100%" height="100%" background="#777" color="#777" text=" " title=" " %}
+              <img src="https://picsum.photos/950/250" alt="Imagen de oferta del mes">
             <div class="container">
               <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
+                  <h2>Ofertas del mes - Mes de Sant Jordi</h2>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
               </div>
@@ -106,7 +146,7 @@
       <!-- Wrap the rest of the page in another container to center all the content. -->
     
       <div class="container marketing">
-    
+          <h2>Top ventas, recomendaciones y novedades</h2>
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
