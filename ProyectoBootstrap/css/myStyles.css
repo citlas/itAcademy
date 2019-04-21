@@ -1,9 +1,54 @@
+/********************************
+global
+*********************************/
+body{
+    padding-top: 0;
+    font-family: 'Assistant', sans-serif;
+}
 
+/********************************
+Navs
+*********************************/
+.mainNavbar{
+    margin-bottom: 0;   
+}
+
+.categorias{
+    margin-bottom:0;
+    
+}
+
+#logo{
+    width: 80px;
+    margin: 0;
+}
+
+#searchThisInput{
+ background-color: rgb(242,242,242);
+ border: none;
+}
+
+/********************************
+ofertas
+*********************************/
 /*imagenes de top*/
 .top-ventas-image{
     width: 10%;
 }
 
-.categorias{
-    margin-bottom:0;
+/********************************
+clásicos
+*********************************/
+
+
+/********************************
+top
+*********************************/
+.topChartsBooksLinks{
+    text-decoration: none;
+    color: black;
 }
+
+/********************************
+footer
+*********************************/

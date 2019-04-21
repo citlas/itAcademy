@@ -19,13 +19,17 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/myStyles.css">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
   </head>
   <body>
     <div >
         <header>
-            <nav class="mainNavbar navbar navbar-expand navbar-dark fixed-top bg-info">
-              <a class="navbar-brand" href="#">Mis libros</a>
+            <nav class="mainNavbar navbar navbar-expand navbar-dark">
+              <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png" alt="logo mis libros"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -35,8 +39,10 @@
                   
                 </ul>
                 <form class="form-inline mt-2 mt-md-0">
-                  <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estas buscando?" aria-label="Search">
-                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                  <input id="searchThisInput" class="form-control mr-sm-2" type="text" placeholder="¿Qué estas buscando?" aria-label="Search">
+                  <button id="searchThis" class="btn btn-outline-light my-2 my-sm-0 bg-success" type="submit"><i class="fas fa-search"></i></button>
+                  <button id="login" class="btn btn-outline-light my-2 my-sm-0 bg-dark" type="submit">Login/Registro</button>
+                  <button id="shoppingBag" class="btn btn-outline-light my-2 my-sm-0 bg-dark" type="submit">Mi cesta <i class="fas fa-shopping-bag"></i></button>
                 </form>
               </div>
             </nav>
@@ -86,8 +92,8 @@
                   <div class="container">
                     <div class="carousel-caption text-right">
                       <h1>Ofertas del día</h1>
-                      <p>Justo lo que quieres leer este fin de semana</p>
-                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                      <p>Justo lo que quieres leer hoy y sin gastos de envío</p>
+                      <p><a class="btn btn-lg btn-outline-light" href="#" role="button">Envío gratis!!</a></p>
                     </div>
                   </div>
                 </div>
@@ -97,7 +103,7 @@
                     <div class="carousel-caption text-right">
                       <h1>Oferta de la semana</h1>
                       <p>¡Estamos en Sant Jordi! ¿Ya han comprado sus libros? Vean nuestra selección aqui!</p>
-                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Nuestra selección</a></p>
+                      <p><a class="btn btn-lg btn-outline-light" href="#" role="button">Nuestra selección</a></p>
                     </div>
                   </div>
                 </div>
@@ -107,7 +113,7 @@
                     <div class="carousel-caption text-right">
                       <h1>Oferta del mes</h1>
                       <p>Mes de abril, comienza el buen tiempo y es momento de seguir los propositos de año nuevo. Como vas con tu lista?</p>
-                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver nuestras listas</a></p>
+                      <p><a class="btn btn-lg btn-outline-light" href="#" role="button">Ver nuestras listas</a></p>
                     </div>
                   </div>
                 </div>
@@ -123,9 +129,103 @@
             </div>
           
           
-            <!-- Marketing messaging and featurettes
-            ================================================== -->
-            <!-- Wrap the rest of the page in another container to center all the content. -->
+            <div class="container">
+              <article id="page-cards" class="page-section">
+                <section class="layout-cards container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-12 col-lg-12">
+                            <h2 class="text-center display-4">Re-descubre clásicos</h2>
+
+                           
+
+                            <div class="card-deck">
+                              
+                                    <section class="card my-3">
+                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos1.png" alt="Photo Sample">
+                                        <div class="card-body">
+                                            <h4 class="layout-title card-title">1984</h4>
+                                             <p class="layout-text card-text">George Orwell</p>
+                                             <h6>20€</h6>
+                                             <div class="card-footer bg-transparent p-0 align-items-end">
+                                                <a href="#" class="card-link">Agregar a la cesta</a>
+                                                <a href="#" class="card-link">Ver más info</a>
+                                             </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                    <section class="card my-3">
+                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos2.png" alt="Photo Sample">
+                                        <div class="card-body">
+                                            <h4 class="layout-title card-title">Desayuno en Tiffany's</h4>
+                                             <p class="layout-text card-text">Truman Capote</p>  
+                                             <h6>20€</h6> 
+                                             <div class="card-footer bg-transparent p-0">
+                                                <a href="#" class="card-link">Agregar a la cesta</a>
+                                                <a href="#" class="card-link">Ver más info</a>
+                                             </div>
+                                             
+                                        </div>
+                                        
+                                    </section>
+                                        
+                                    <section class="card my-3">
+                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos3.png" alt="Photo Sample">
+                                        <div class="card-body">
+                                            <h4 class="layout-title card-title">Don Quijote</h4>
+                                             <p class="layout-text card-text">Miguel de Cervantes</p>
+                                              <h6>20€</h6>
+                                              <div class="card-footer bg-transparent p-0">
+                                                  <a href="#" class="card-link">Agregar a la cesta</a>
+                                                  <a href="#" class="card-link">Ver más info</a>
+                                               </div>
+
+                                        </div>
+                                        
+                                    </section>
+
+                                    <section class="card my-3">
+                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos4.png" alt="Photo Sample">
+                                        <div class="card-body">
+                                            <h4 class="layout-title card-title">Un mundo feliz</h4>
+                                             <p class="layout-text card-text">Aldous Huxley</p>
+                                             <h6>20€</h6>
+                                             <div class="card-footer bg-transparent p-0">
+                                                <a href="#" class="card-link">Agregar a la cesta</a>
+                                                <a href="#" class="card-link">Ver más info</a>
+                                             </div>
+                                        </div>
+                                        
+                                    </section>
+
+                                    <section class="card my-3">
+                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos5.png" alt="Photo Sample">
+                                        <div class="card-body">
+                                            <h4 class="layout-title card-title">Alicia en el país de las maravillas</h4>
+                                             <p class="layout-text card-text">Lewis Carroll</p>
+                                             <h6>20€</h6>
+                                             <div class="card-footer bg-transparent p-0">
+                                                <a href="#" class="card-link">Agregar a la cesta</a>
+                                                <a href="#" class="card-link">Ver más info</a>
+                                             </div>
+                                        </div>
+                                        
+                                    </section>
+                
+                            </div>
+                
+                        </div>
+                    
+                    </div>
+                
+                </section>
+    
+            
+                </article>
+            </div>
+
+
+
           
             <div class="container marketing ">
           
@@ -136,16 +236,22 @@
             <div class="row justify-content-center">
                 <div class="col-lg-4">
                         <h3 class="display-5">Top Ventas</h3>
-                    <section class="media">
+                        <a  href="#">
+                        <section class="media ">
+                     
 
                             <img class="top-ventas-image" src="img/topVenta1.png" alt="Media Image 01">
-                            <div class="media-body">
+                            <div class="media-body topChartsBooksLinks">
                                 <h4 class="layout-title">Libro 1</h4>
                                 <p class="layout-text">Un gran libro para empezar</p>        
                             </div>
+                          
                     </section>
+                  </a>
                 
+                  <a class="topChartsBooksLinks" href="#">
                     <section class="media">
+                       
                     <img class="top-ventas-image" src="img/topVenta2.png" alt="Media Image 02">
                         <div class="media-body">
                             <h4 class="layout-title">Libro 2</h4>
@@ -153,18 +259,24 @@
                         </div>
                     
                     </section>
-            
+                  </a>
+
+                  <a class="topChartsBooksLinks" href="#">
                     <section class="media">
+                        
                         <img class="top-ventas-image" src="img/topVenta3.png" alt="Media Image 03">
                         <div class="media-body">
                             <h4 class="layout-title">Libro 3</h4>
                             <p class="layout-text">Mejor 3 que 2</p>
                         </div>      
                     </section>
+                  </a>
                     
                 </div>
                 <div class="col-lg-4">
                         <h3 class="display-5">Top Recomendaciones</h3>
+
+                        <a class="topChartsBooksLinks" href="#">
                     <section class="media">
                             <img class="top-ventas-image" src="img/topVenta1.png" alt="Media Image 01">
                             <div class="media-body">
@@ -172,7 +284,9 @@
                                 <p class="layout-text">Un gran libro para empezar</p>        
                             </div>
                     </section>
-                
+                  </a>
+
+                    <a class="topChartsBooksLinks" href="#">
                     <section class="media">
                     <img class="top-ventas-image" src="img/topVenta2.png" alt="Media Image 02">
                         <div class="media-body">
@@ -181,7 +295,9 @@
                         </div>
                     
                     </section>
+                  </a>
             
+                    <a class="topChartsBooksLinks" href="#">
                     <section class="media">
                         <img class="top-ventas-image" src="img/topVenta3.png" alt="Media Image 03">
                         <div class="media-body">
@@ -189,11 +305,13 @@
                             <p class="layout-text">Mejor 3 que 2</p>
                         </div>      
                     </section>
-                    
+                  </a>
+
                 </div>
                 <div class="col-lg-4">
                         <h3 class="display-5">Top Novedades</h3>
 
+                        <a class="topChartsBooksLinks" href="#">
                     <section class="media">
                             <img class="top-ventas-image" src="img/topVenta1.png" alt="Media Image 01">
                             <div class="media-body">
@@ -201,7 +319,9 @@
                                 <p class="layout-text">Un gran libro para empezar</p>        
                             </div>
                     </section>
-                
+                  </a>
+
+                    <a class="topChartsBooksLinks" href="#">
                     <section class="media">
                     <img class="top-ventas-image" src="img/topVenta2.png" alt="Media Image 02">
                         <div class="media-body">
@@ -210,7 +330,9 @@
                         </div>
                     
                     </section>
+                  </a>
             
+                    <a class="topChartsBooksLinks" href="#">
                     <section class="media">
                         <img class="top-ventas-image" src="img/topVenta3.png" alt="Media Image 03">
                         <div class="media-body">
@@ -218,7 +340,8 @@
                             <p class="layout-text">Mejor 3 que 2</p>
                         </div>      
                     </section>
-                    
+                  </a>
+
                 </div>
             </div>
     
