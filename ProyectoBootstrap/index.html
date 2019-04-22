@@ -22,14 +22,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Assistant:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 
   </head>
   <body>
     <div >
         <header>
             <nav class="mainNavbar navbar navbar-expand navbar-dark">
-              <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png" alt="logo mis libros"></a>
+              <a class="navbar-brand" id="logo" href="#">Mis libros</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -58,22 +58,22 @@
                 <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample04">
                   <ul class="navbar-nav ">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Literatura y ficción </a>
+                      <a class="nav-link grow" href="#">Literatura y ficción </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Infantil</a>
+                      <a class="nav-link grow" href="#">Infantil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Juvenil</a>
+                        <a class="nav-link grow" href="#">Juvenil</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">De texto</a>
+                        <a class="nav-link grow" href="#">De texto</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Papelería</a>
+                        <a class="nav-link grow" href="#">Papelería</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Ver todas las categorías</a>
+                        <a class="nav-link grow" href="#">Ver todas las categorías</a>
                       </li>
                   </ul>
                  
@@ -137,82 +137,141 @@
                             <h2 class="text-center display-4">Re-descubre clásicos</h2>
 
                            
-
                             <div class="card-deck">
+                              <div class="row">
                               
-                                    <section class="card my-3">
-                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos1.png" alt="Photo Sample">
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card mt-4 grow">
+                                        <img class="card-img-top" src="img/clasicos1.png" alt="imagen libro 1984">
                                         <div class="card-body">
-                                            <h4 class="layout-title card-title">1984</h4>
-                                             <p class="layout-text card-text">George Orwell</p>
-                                             <h6>20€</h6>
-                                             <div class="card-footer bg-transparent p-0 align-items-end">
-                                                <a href="#" class="card-link">Agregar a la cesta</a>
-                                                <a href="#" class="card-link">Ver más info</a>
-                                             </div>
+                                          <h5 class="card-title">1984</h5>
+                                          <p class="card-text">George Orwell</p>
+                                          <h6>20€</h6>
                                         </div>
-                                        
-                                    </section>
-                                    
-                                    <section class="card my-3">
-                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos2.png" alt="Photo Sample">
-                                        <div class="card-body">
-                                            <h4 class="layout-title card-title">Desayuno en Tiffany's</h4>
-                                             <p class="layout-text card-text">Truman Capote</p>  
-                                             <h6>20€</h6> 
-                                             <div class="card-footer bg-transparent p-0">
-                                                <a href="#" class="card-link">Agregar a la cesta</a>
-                                                <a href="#" class="card-link">Ver más info</a>
-                                             </div>
-                                             
+                                        <div class="card-footer bg-transparent text-center">
+                                          <a href="#" class="card-link"><i class="fas fa-shopping-bag"></i> Comprar</a>
+                                          <br>
+                                          <a href="#" class="card-link">Ver más info</a>
                                         </div>
-                                        
-                                    </section>
-                                        
-                                    <section class="card my-3">
-                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos3.png" alt="Photo Sample">
-                                        <div class="card-body">
-                                            <h4 class="layout-title card-title">Don Quijote</h4>
-                                             <p class="layout-text card-text">Miguel de Cervantes</p>
-                                              <h6>20€</h6>
-                                              <div class="card-footer bg-transparent p-0">
-                                                  <a href="#" class="card-link">Agregar a la cesta</a>
-                                                  <a href="#" class="card-link">Ver más info</a>
-                                               </div>
-
-                                        </div>
-                                        
-                                    </section>
-
-                                    <section class="card my-3">
-                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos4.png" alt="Photo Sample">
-                                        <div class="card-body">
-                                            <h4 class="layout-title card-title">Un mundo feliz</h4>
-                                             <p class="layout-text card-text">Aldous Huxley</p>
-                                             <h6>20€</h6>
-                                             <div class="card-footer bg-transparent p-0">
-                                                <a href="#" class="card-link">Agregar a la cesta</a>
-                                                <a href="#" class="card-link">Ver más info</a>
-                                             </div>
-                                        </div>
-                                        
-                                    </section>
-
-                                    <section class="card my-3">
-                                        <img class="layout-image card-img-top img-fluid" src="img/clasicos5.png" alt="Photo Sample">
-                                        <div class="card-body">
-                                            <h4 class="layout-title card-title">Alicia en el país de las maravillas</h4>
-                                             <p class="layout-text card-text">Lewis Carroll</p>
-                                             <h6>20€</h6>
-                                             <div class="card-footer bg-transparent p-0">
-                                                <a href="#" class="card-link">Agregar a la cesta</a>
-                                                <a href="#" class="card-link">Ver más info</a>
-                                             </div>
-                                        </div>
-                                        
-                                    </section>
-                
+                                      </div>
+                                </div>
+                              
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div class="card mt-4 grow">
+                                <img class="card-img-top" src="img/clasicos2.png" alt="imagen libro desayuno en Tiffany's">
+                                <div class="card-body">
+                                  <h5 class="card-title">Desayuno en Tiffany's</h5>
+                                  <p class="card-text">Truman Capote</p>
+                                  <h6>20€</h6>
+                                </div>
+                                <div class="card-footer bg-transparent text-center">
+                                  <a href="#" class="card-link"><i class="fas fa-shopping-bag"></i> Comprar</a>
+                                  <br>
+                                  <a href="#" class="card-link">Ver más info</a>
+                                </div>
+                              </div>
+                                </div>
+                              
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div class="card mt-4 grow">
+                                <img class="card-img-top" src="img/clasicos3.png" alt="imagen libro Don Quijote">
+                                <div class="card-body">
+                                  <h5 class="card-title">Don Quijote</h5>
+                                  <p class="card-text">Miguel Cervantes</p>
+                                  <h6>20€</h6>
+                                </div>
+                                <div class="card-footer bg-transparent text-center">
+                                  <a href="#" class="card-link"><i class="fas fa-shopping-bag"></i> Comprar</a>
+                                  <br>
+                                  <a href="#" class="card-link">Ver más info</a>
+                                </div>
+                              </div>
                             </div>
+
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div class="card mt-4 grow">
+                                <img class="card-img-top" src="img/clasicos4.png" alt="imagen libro un mundo feliz">
+                                <div class="card-body">
+                                  <h5 class="card-title">Un mundo feliz</h5>
+                                  <p class="card-text">Aldous Huxley</p>
+                                  <h6>20€</h6>
+                                </div>
+                                <div class="card-footer bg-transparent text-center">
+                                  <a href="#" class="card-link"><i class="fas fa-shopping-bag"></i> Comprar</a>
+                                  <br>
+                                  <a href="#" class="card-link">Ver más info</a>
+                                </div>
+                              </div>
+                            </div>
+
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div class="card mt-4 grow">
+                                <img class="card-img-top" src="img/clasicos5.png" alt="imagen libro Alicia en el país de las maravillas">
+                                <div class="card-body">
+                                  <h5 class="card-title">Alicia en el país de las maravillas</h5>
+                                  <p class="card-text">Lewis Carroll</p>
+                                  <h6>20€</h6>
+                                </div>
+                                <div class="card-footer bg-transparent text-center">
+                                  <a href="#" class="card-link"><i class="fas fa-shopping-bag"></i> Comprar</a>
+                                  <br>
+                                  <a href="#" class="card-link">Ver más info</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card mt-4 grow">
+                                  <img class="card-img-top" src="img/clasicos6.png" alt="imagen libro Alicia en el país de las maravillas">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Oliver Twist</h5>
+                                    <p class="card-text">Charles Dickens</p>
+                                    <h6>20€</h6>
+                                  </div>
+                                  <div class="card-footer bg-transparent text-center">
+                                    <a href="#" class="card-link"><i class="fas fa-shopping-bag"></i> Comprar</a>
+                                    <br>
+                                    <a href="#" class="card-link">Ver más info</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                  <div class="card mt-4 grow">
+                                    <img class="card-img-top" src="img/clasicos7.png" alt="imagen libro Alicia en el país de las maravillas">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Orgullos y prejuicio</h5>
+                                      <p class="card-text">Jane Austen</p>
+                                      <h6>20€</h6>
+                                    </div>
+                                    <div class="card-footer bg-transparent text-center">
+                                      <a href="#" class="card-link"><i class="fas fa-shopping-bag"></i> Comprar</a>
+                                      <br>
+                                      <a href="#" class="card-link">Ver más info</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="card mt-4 grow">
+                                      <img class="card-img-top" src="img/clasicos8.png" alt="imagen libro Alicia en el país de las maravillas">
+                                      <div class="card-body">
+                                        <h5 class="card-title">El Conde de Montecristo</h5>
+                                        <p class="card-text">Alejandro Dumas</p>
+                                        <h6>20€</h6>
+                                      </div>
+                                      <div class="card-footer bg-transparent text-center">
+                                        <a href="#" class="card-link"><i class="fas fa-shopping-bag"></i> Comprar</a>
+                                        <br>
+                                        <a href="#" class="card-link">Ver más info</a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                            </div>
+                            </div>
+
+
                 
                         </div>
                     
@@ -242,8 +301,8 @@
 
                             <img class="top-ventas-image" src="img/topVenta1.png" alt="Media Image 01">
                             <div class="media-body topChartsBooksLinks">
-                                <h4 class="layout-title">Libro 1</h4>
-                                <p class="layout-text">Un gran libro para empezar</p>        
+                                <h4 class="layout-title">El Director</h4>
+                                <p class="layout-text">David Jimenez</p>        
                             </div>
                           
                     </section>
@@ -254,8 +313,8 @@
                        
                     <img class="top-ventas-image" src="img/topVenta2.png" alt="Media Image 02">
                         <div class="media-body">
-                            <h4 class="layout-title">Libro 2</h4>
-                            <p class="layout-text">Mejor 2 que uno.</p>
+                            <h4 class="layout-title">Una historia de España</h4>
+                            <p class="layout-text">Arturo Pérez Reverte</p>
                         </div>
                     
                     </section>
@@ -266,8 +325,8 @@
                         
                         <img class="top-ventas-image" src="img/topVenta3.png" alt="Media Image 03">
                         <div class="media-body">
-                            <h4 class="layout-title">Libro 3</h4>
-                            <p class="layout-text">Mejor 3 que 2</p>
+                            <h4 class="layout-title">Como hacer que te pasen cosas buenas</h4>
+                            <p class="layout-text">Marián Rojas Estapé</p>
                         </div>      
                     </section>
                   </a>
@@ -278,20 +337,20 @@
 
                         <a class="topChartsBooksLinks" href="#">
                     <section class="media">
-                            <img class="top-ventas-image" src="img/topVenta1.png" alt="Media Image 01">
+                            <img class="top-ventas-image" src="img/topRecomendaciones1.png" alt="Media Image 01">
                             <div class="media-body">
-                                <h4 class="layout-title">Libro 1</h4>
-                                <p class="layout-text">Un gran libro para empezar</p>        
+                                <h4 class="layout-title">Come comida real</h4>
+                                <p class="layout-text">Carlos Ríos</p>        
                             </div>
                     </section>
                   </a>
 
                     <a class="topChartsBooksLinks" href="#">
                     <section class="media">
-                    <img class="top-ventas-image" src="img/topVenta2.png" alt="Media Image 02">
+                    <img class="top-ventas-image" src="img/topRecomendaciones2.png" alt="Media Image 02">
                         <div class="media-body">
-                            <h4 class="layout-title">Libro 2</h4>
-                            <p class="layout-text">Mejor 2 que uno.</p>
+                            <h4 class="layout-title">Lola Vendetta</h4>
+                            <p class="layout-text">Raquel Riba Rossy</p>
                         </div>
                     
                     </section>
@@ -299,10 +358,10 @@
             
                     <a class="topChartsBooksLinks" href="#">
                     <section class="media">
-                        <img class="top-ventas-image" src="img/topVenta3.png" alt="Media Image 03">
+                        <img class="top-ventas-image" src="img/topRecomendaciones3.png" alt="Media Image 03">
                         <div class="media-body">
-                            <h4 class="layout-title">Libro 3</h4>
-                            <p class="layout-text">Mejor 3 que 2</p>
+                            <h4 class="layout-title">Todo lo que sucedió con Miranda Huff</h4>
+                            <p class="layout-text">Javier Castillo</p>
                         </div>      
                     </section>
                   </a>
@@ -313,20 +372,20 @@
 
                         <a class="topChartsBooksLinks" href="#">
                     <section class="media">
-                            <img class="top-ventas-image" src="img/topVenta1.png" alt="Media Image 01">
+                            <img class="top-ventas-image" src="img/topNovedades1.png" alt="Media Image 01">
                             <div class="media-body">
-                                <h4 class="layout-title">Libro 1</h4>
-                                <p class="layout-text">Un gran libro para empezar</p>        
+                                <h4 class="layout-title">Con una sonrisa</h4>
+                                <p class="layout-text">Ana Guerra</p>        
                             </div>
                     </section>
                   </a>
 
                     <a class="topChartsBooksLinks" href="#">
                     <section class="media">
-                    <img class="top-ventas-image" src="img/topVenta2.png" alt="Media Image 02">
+                    <img class="top-ventas-image" src="img/topNovedades2.png" alt="Media Image 02">
                         <div class="media-body">
-                            <h4 class="layout-title">Libro 2</h4>
-                            <p class="layout-text">Mejor 2 que uno.</p>
+                            <h4 class="layout-title">Sakura</h4>
+                            <p class="layout-text">Matilde Asensi</p>
                         </div>
                     
                     </section>
@@ -334,10 +393,10 @@
             
                     <a class="topChartsBooksLinks" href="#">
                     <section class="media">
-                        <img class="top-ventas-image" src="img/topVenta3.png" alt="Media Image 03">
+                        <img class="top-ventas-image" src="img/topNovedades3.png" alt="Media Image 03">
                         <div class="media-body">
-                            <h4 class="layout-title">Libro 3</h4>
-                            <p class="layout-text">Mejor 3 que 2</p>
+                            <h4 class="layout-title">La misión de Rox</h4>
+                            <p class="layout-text">Laura Gallego</p>
                         </div>      
                     </section>
                   </a>
@@ -349,43 +408,43 @@
         </section>
 
               
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
-                <div class="row">
-                  <div class="col-12 col-md">
-                    <img class="mb-2" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-                    <small class="d-block mb-3 text-muted">&copy; 2017-Mis libros </small>
-                  </div>
-                  <div class="col-6 col-md">
-                    <h5>Nosotros</h5>
-                    <ul class="list-unstyled text-small">
-                      <li><a class="text-muted" href="#">Quienes somos</a></li>
-                      <li><a class="text-muted" href="#">Donde estamos</a></li>
-                      <li><a class="text-muted" href="#">Información legal</a></li>
-                      <li><a class="text-muted" href="#">Quieres ser proveedor?</a></li>
-                   
-                    </ul>
-                  </div>
-                  <div class="col-6 col-md">
-                    <h5>Contacto</h5>
-                    <ul class="list-unstyled text-small">
-                      <li><a class="text-muted" href="#">Tienes dudas? Escríbenos</a></li>
-                      <li><a class="text-muted" href="#">Redes sociales</a></li>
-                     
-                    </ul>
-                  </div>
-                  <div class="col-6 col-md">
-                    <h5>Ayuda</h5>
-                    <ul class="list-unstyled text-small">
-                      <li><a class="text-muted" href="#">Problemas con tus pedidos</a></li>
-                      <li><a class="text-muted" href="#">Devoluciones</a></li>
-                      <li><a class="text-muted" href="#">FAQ</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </footer>
+
 
           </main>
-          
+          <footer class="pt-4 mt-md-5 pt-md-5 pl-3 border-top bg-info text-light">
+              <div class="row">
+                <div class="col-12 col-md">
+                  <img class="mb-2" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                  <small class="d-block mb-3 text-muted">&copy; 2017-Mis libros </small>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Nosotros</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Quienes somos</a></li>
+                    <li><a class="text-muted" href="#">Donde estamos</a></li>
+                    <li><a class="text-muted" href="#">Información legal</a></li>
+                    <li><a class="text-muted" href="#">Quieres ser proveedor?</a></li>
+                 
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Contacto</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Tienes dudas? Escríbenos</a></li>
+                    <li><a class="text-muted" href="#">Redes sociales</a></li>
+                   
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Ayuda</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Problemas con tus pedidos</a></li>
+                    <li><a class="text-muted" href="#">Devoluciones</a></li>
+                    <li><a class="text-muted" href="#">FAQ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
 
     </div>
 

@@ -2,7 +2,7 @@
 global
 *********************************/
 body{
-    padding-top: 0;
+    padding: 0;
     font-family: 'Assistant', sans-serif;
 }
 
@@ -19,8 +19,10 @@ Navs
 }
 
 #logo{
-    width: 80px;
+    font-size: 2em;
+    font-family: 'Monoton', cursive;
     margin: 0;
+    color: gray;
 }
 
 #searchThisInput{
@@ -39,7 +41,8 @@ ofertas
 /********************************
 clásicos
 *********************************/
-
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 
 /********************************
 top
