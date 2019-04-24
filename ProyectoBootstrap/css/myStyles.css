@@ -9,6 +9,7 @@ body{
 /********************************
 Navs
 *********************************/
+
 .mainNavbar{
     margin-bottom: 0;   
 }
@@ -28,6 +29,10 @@ Navs
 #searchThisInput{
  background-color: rgb(242,242,242);
  border: none;
+}
+
+#login:hover, #shoppingBag:hover{
+    color:lightskyblue;
 }
 
 /********************************
