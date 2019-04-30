@@ -1,3 +1,6 @@
+/*
+Con jquery validator
+
 $(function() {
 
     $.validator.setDefaults({
@@ -46,7 +49,18 @@ $(function() {
   
   });
   
+  */
   
-  
-  
+  function validateSearch(){
+    var searchedInput;
+    searchedInput = document.querySelector("#searchThisInput").value;
+
+    if(searchedInput === ""){
+      alert("el campo esta vacío");
+      return false;
+    } else if (searchedInput.length < 3){
+      alert("el campo debe tener 3 o más carácteres");
+      return false;
+    }
+  }
   

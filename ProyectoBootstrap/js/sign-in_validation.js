@@ -1,3 +1,5 @@
+/*
+Con jquery validator
 $(function() {
 
     $.validator.setDefaults({
@@ -102,6 +104,49 @@ $(function() {
 
 });
 
+  */
+  
+
+ 
+ var email, password, emailExpression;
+ email = document.querySelector("#validationCustom01").value;
+ password = document.querySelector("#validationCustom02").value;
+ emailExpression = /\w+@\w+\.+[a-z]/; //letras o numeros mas @ + carácteres + punto + letras
+
+ var email_login_error = document.querySelector(".email-login-error")
+ var psw_login_error = document.querySelector(".psw-login-error")
+
+ //email.addEventListener('blur', mailVerify, true);
+ //password.addEventListener('blur', passwordVerify, true);
+
+ function validateSignIn(){
+  
+  if(email === ""){
+    document.querySelector("#validationCustom01").classList.add("is-invalid")
+    email_login_error.innerHTML = "Este campo es obligatorio"
+    return false;
+  } else if (!emailExpression.test(email)){
+    document.querySelector("#validationCustom01").classList.add("is-invalid")
+    email_login_error.innerHTML = "Tienes que poner un mail válido"
+    return false;
+  } else {
+    document.querySelector("#validationCustom01").classList.remove("is-invalid")
+    document.querySelector("#validationCustom01").classList.add("is-valid")
+    email_login_error.innerHTML = ""
+    return true;
+  }
+  
+  if( password ===""){
+    document.querySelector("#validationCustom02").classList.add("is-invalid")
+    psw_login_error.innerHTML = "Este campo es obligatorio"
+    return false;
+  } 
   
   
-  
+
+}//fin validateSignIn
+
+
+
+
+
