@@ -30,7 +30,7 @@
   <body>
     <div class="container">
     <div class="row">    
-    <form id="login-form" name="login-form" class="needs-validation form-signin col-lg-6" novalidate onsubmit="return validateSignIn();">
+    <form id="login-form" name="login-form" class="needs-validation form-signin col-lg-6" novalidate onsubmit="return validateSignIn()">
       <!--onsubmit="return validateSignIn();"-->
     
       <h1 class="h3 mb-3 font-weight-normal">Para acceder:</h1>
@@ -39,16 +39,11 @@
       <label for="inputEmail" >Email</label>
       -->
       <input type="email" name="loginEmail" id="validationCustom01" class="form-control" placeholder="Pon tu email" required autofocus>
-      <div class="email-login-error invalid-feedback">
-        
-      </div>
+      <div class="email-login-error invalid-feedback"></div>
      
       <label for="validationCustom02" >Contraseña</label>
       <input type="password" name="loginPassword" id="validationCustom02" class="form-control" placeholder="Contraseña" required>
-      
-      <div class="psw-login-error invalid-feedback">
-         
-        </div>
+      <div class="psw-login-error invalid-feedback"></div>
       
       <div class="checkbox mb-3">
         <label>
@@ -63,7 +58,9 @@
     
       <h1 class="h3 mb-3 font-weight-normal">O si no tienes cuenta regístrate!</h1>
       <label for="inputEmail" >Email</label>
-      <input type="email" id="inputEmail" name="registerEmail" class="form-control" placeholder="Pon tu email" required autofocus>
+      <input type="email" id="registerEmail" name="registerEmail" class="form-control" placeholder="Pon tu email" required autofocus>
+      <div class="register-email-error invalid-feedback"></div>
+
       
       <label class="text-dark" for="registration-state">Provincia</label>
                      <select id="registration-state" name="registrationstate" class="form-control" required>
@@ -121,11 +118,16 @@
                         <option value='zamora'>Zamora</option>
                         <option value='zaragoza'>Zaragoza</option>
                      </select>
+                     <div class="register-state-error invalid-feedback"></div>
       
       <label for="inputPassword" >Contraseña</label>
-      <input type="password" id="inputRegisterPassword" name="registerPassword" class="form-control" placeholder="Contraseña" required>
+      <input type="password" id="registerPassword" name="registerPassword" class="form-control" placeholder="Contraseña" required>
+      <div class="register-psw-error invalid-feedback"></div>
+
       <label for="inputRepeatedPassword" >Repite tu contraseña</label>
-      <input type="password" id="inputRepeatedPassword" name="registerRepeatedPassword" class="form-control" placeholder="Repite tu contraseña" required>
+      <input type="password" id="registerRepeatedPassword" name="registerRepeatedPassword" class="form-control" placeholder="Repite tu contraseña" required>
+      <div class="register-repeated-psw-error invalid-feedback"></div>
+
      
       <button class="btn btn-lg btn-primary btn-block" type="submit">Crea mi cuenta</button>
     </form>

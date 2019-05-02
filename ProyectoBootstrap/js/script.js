@@ -1,3 +1,26 @@
+//VALIDACIÓN CON JAVASCRIPT, ABAJO EN COMMENTS CON VALIDATOR JQUERY
+var searchedInput, errorDisplayed;
+searchedInput = document.querySelector("#searchThisInput").value;
+errorDisplayed = document.querySelector(".search-error");
+  
+ 
+  function validateSearch(){ 
+
+    if(searchedInput.length === ""){
+      document.querySelector("#searchThisInput").classList.add("is-invalid")
+      errorDisplayed.textContent = "Este campo es obligatorio";
+      return false;
+    } else if (searchedInput.length < 3){
+      errorDisplayed.textContent = "El campo debe tener 3 o más carácteres";
+      return false;
+    } else {
+      document.querySelector("#searchThisInput").classList.remove("is-invalid")
+      document.querySelector("#searchThisInput").classList.add("is-valid")
+      errorDisplayed.textContent = "";
+      return true
+    }
+  }
+
 /*
 Con jquery validator
 
@@ -51,16 +74,4 @@ $(function() {
   
   */
   
-  function validateSearch(){
-    var searchedInput;
-    searchedInput = document.querySelector("#searchThisInput").value;
-
-    if(searchedInput === ""){
-      alert("el campo esta vacío");
-      return false;
-    } else if (searchedInput.length < 3){
-      alert("el campo debe tener 3 o más carácteres");
-      return false;
-    }
-  }
   
