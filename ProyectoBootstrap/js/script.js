@@ -1,17 +1,19 @@
 //VALIDACIÓN CON JAVASCRIPT, ABAJO EN COMMENTS CON VALIDATOR JQUERY
 var searchedInput, errorDisplayed;
-searchedInput = document.querySelector("#searchThisInput").value;
+searchedInput = document.querySelector("#searchThisInput");
 errorDisplayed = document.querySelector(".search-error");
   
  
   function validateSearch(){ 
-
-    if(searchedInput.length === ""){
+    if(searchedInput.value.length === 0){
       document.querySelector("#searchThisInput").classList.add("is-invalid")
       errorDisplayed.textContent = "Este campo es obligatorio";
+      errorDisplayed.style.display = "block";
       return false;
-    } else if (searchedInput.length < 3){
+    } else if (searchedInput.value.length < 3){
       errorDisplayed.textContent = "El campo debe tener 3 o más carácteres";
+      errorDisplayed.style.display = "block";
+
       return false;
     } else {
       document.querySelector("#searchThisInput").classList.remove("is-invalid")
