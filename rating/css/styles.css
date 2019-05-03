@@ -1,0 +1,47 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.center {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+/*Exercici 1*/
+.blue, .blueEx2, .parent i{
+    color:Dodgerblue;
+}
+/*Exercici 2*/
+.blueEx2:hover, .parent:hover i{
+    color:tomato;
+}
+/*Exercici 3*/
+.parent i:hover ~ i {
+    color: Dodgerblue;
+  }
+
+/*arriba respuesta de:
+https://stackoverflow.com/questions/1817792/is-there-a-previous-sibling-css-selector
+
+--------cambiando dirección-------
+.exercici3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.blueEx3:hover, .blueEx3:hover~.blueEx3{
+    color:green;
+} 
+
+*/
+  
+/*Exercici 4*/
+  .gold{
+    color: gold;      
+}
+
+/*Exercici 5*/
+.exercici-5{
+    margin-bottom: 50px;
+}

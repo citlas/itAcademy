@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rating exercici</title>
+
+    <!--my styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--my js-->
+    <script defer src="js/script.js"></script>
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- font google-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+</head>
+<body >
+    <div class="center">
+        <div class="exercici-1">
+            <h2>Exercici 1</h2>
+            <p>Mostrar a pantalla 5 estrelles (o l’icona que més us agradi) centrades i amb un color assignat</p>
+            <div class="blue">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>  
+            </div>
+            
+        </div>
+
+        <div class="exercici-2">
+            <h2>Exercici 2</h2>
+            <p>Que el color de l’estrella canvi si el mouse es posa sobre d’una d’elles</p>
+            <div>
+                <i class="blueEx2 far fa-star"></i>
+                <i class="blueEx2 far fa-star"></i>
+                <i class="blueEx2 far fa-star"></i>
+                <i class="blueEx2 far fa-star"></i>
+                <i class="blueEx2 far fa-star"></i>  
+            </div> 
+        </div>
+
+        <div class="exercici-3">
+            <h2>Exercici 3</h2>
+            <p>Al moure el mouse sobre un element, que canvii els colors a tots els seus anteriors. Si per exemple es posa el mouse a la tercera estrella, s’han de canviar de color de la 1 a la 3. </p>
+            <div class="center parent">
+                    <i class="blueEx3 far fa-star" onclick="rateThis(this.id)"></i>
+                    <i class="blueEx3 far fa-star"></i>
+                    <i class="blueEx3 far fa-star"></i>
+                    <i class="blueEx3 far fa-star"></i>
+                    <i class="blueEx3 far fa-star"></i>
+                
+            </div>
+            
+
+        </div>
+
+        <div class="exercici-4">
+            <h2>Exercici 4</h2>
+            <p>Al premer una estrella, s’han de quedar els colors fixes a aquesta i totes les anteriors</p>
+            <div class="center blue blueEx4">
+                    <i id="1" class="far fa-star"></i>
+                    <i id="2" class="far fa-star"></i>
+                    <i id="3" class="far fa-star"></i>
+                    <i id="4" class="far fa-star"></i>
+                    <i id="5" class="far fa-star"></i>
+                </div>
+        </div>
+
+        <div class="exercici-5">
+            <h2>Exercici 5</h2>
+            <p>Si es prem a una altra estrella, els colors s’han d’actualitzar correctament. A més, si l’usuari prem fora de la zona de les estrelles, s’han de desel·leccionar totes.</p>
+            <div class="center blue blueEx5">
+                    <i id="11" class="ex5 far fa-star"></i>
+                    <i id="12" class="ex5 far fa-star"></i>
+                    <i id="13" class="ex5 far fa-star"></i>
+                    <i id="14" class="ex5 far fa-star"></i>
+                    <i id="15" class="ex5 far fa-star"></i>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
