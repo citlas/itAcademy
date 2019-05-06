@@ -74,7 +74,7 @@ function checkMail(mailToCheck,changeThisId) {
     document.querySelector(changeThisId).classList.remove("is-invalid")
     document.querySelector(changeThisId).classList.add("is-valid")
     errorDisplayed.innerHTML = ""
-    return true;
+    return true
   }
   return false;
 }//fin check mail
@@ -90,14 +90,14 @@ function checkPassword(pswToCheck,changeThisId) {
   if(pswToCheck.length==0){
     document.querySelector(changeThisId).classList.add("is-invalid")
     errorDisplayed.textContent = "Poner una contraseña es obligatorio";
-    return false;
+    
   } else {
     document.querySelector(changeThisId).classList.remove("is-invalid")
     document.querySelector(changeThisId).classList.add("is-valid")
     errorDisplayed.innerHTML = ""
-    return true;
+    return true
   }
-  
+  return false;
 }//fin check mail
 
  
@@ -132,39 +132,23 @@ function checkRepeatedPasswordRegister() {
 
 //SUBMIT VALIDATION
 function validateSignIn(){
-  //var checking = (checkMail(email,"#validationCustom01") && checkPassword(password.value,idPswLogin)) ? true : false;
+ 
   var checking;
-  if(checkMail(email,"#validationCustom01")==false){
-    if(checkPassword(password.value,idPswLogin)==false){  
-      checking=false
-      return checking
-    } else {
-      checking=false
-      return checking
-    }
-  } else {  
-      checking=true
-      return checking
-  } 
+  checkMail(email,"#validationCustom01")
+  checkPassword(password.value,idPswLogin)
+
+
+   var checking = (checkMail(email,"#validationCustom01") && checkPassword(password.value,idPswLogin)) ? true : false;
+  return checking
 }
 
 function validateRegister(){
-//  var checkingRegister = (checkMail(registerEmail,idEmailRegister) && (checkPassword(registerPassword.value,idPswRegister) && (checkStateRegister() && checkRepeatedPasswordRegister() ))) ? true : false;
-var checkingRegister
-if(checkMail(registerEmail,idEmailRegister)==false){
-  if(checkPassword(registerPassword.value,idPswRegister)==false){
-    if(checkStateRegister()==false){
-      if(checkRepeatedPasswordRegister()==false){
-        checkingRegister=false
-        return checkingRegister
-      }
+  checkMail(registerEmail,idEmailRegister); 
+  checkPassword(registerPassword.value,idPswRegister);
+  checkStateRegister();
+  checkRepeatedPasswordRegister();
 
-    }
-  }
-  checkingRegister=false
-  return checkingRegister
-}
-checkingRegister=true
+  var checkingRegister = (checkMail(registerEmail,idEmailRegister) && (checkPassword(registerPassword.value,idPswRegister) && (checkStateRegister() && checkRepeatedPasswordRegister() ))) ? true : false;
   return checkingRegister;
 }
  
