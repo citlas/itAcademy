@@ -65,18 +65,18 @@ function checkMail(mailToCheck,changeThisId) {
   if(mailToCheck.value.length==0){
     document.querySelector(changeThisId).classList.add("is-invalid")
     errorDisplayed.innerHTML = "Poner un email es obligatorio";
-    return false;
+    
   } else if (!emailExpression.test(mailToCheck.value)){
     document.querySelector(changeThisId).classList.add("is-invalid")
     errorDisplayed.innerHTML = "Tienes que poner un mail que sea válido";
-    return false;
+    
   } else {
     document.querySelector(changeThisId).classList.remove("is-invalid")
     document.querySelector(changeThisId).classList.add("is-valid")
     errorDisplayed.innerHTML = ""
     return true;
   }
-  
+  return false;
 }//fin check mail
 
 function checkPassword(pswToCheck,changeThisId) {
@@ -132,12 +132,39 @@ function checkRepeatedPasswordRegister() {
 
 //SUBMIT VALIDATION
 function validateSignIn(){
-  var checking = (checkMail(email,"#validationCustom01") && checkPassword(password.value,idPswLogin)) ? true : false;
-  return checking;
+  //var checking = (checkMail(email,"#validationCustom01") && checkPassword(password.value,idPswLogin)) ? true : false;
+  var checking;
+  if(checkMail(email,"#validationCustom01")==false){
+    if(checkPassword(password.value,idPswLogin)==false){  
+      checking=false
+      return checking
+    } else {
+      checking=false
+      return checking
+    }
+  } else {  
+      checking=true
+      return checking
+  } 
 }
 
 function validateRegister(){
-  var checkingRegister = (checkMail(registerEmail,idEmailRegister) && (checkPassword(registerPassword.value,idPswRegister) && (checkStateRegister() && checkRepeatedPasswordRegister() ))) ? true : false;
+//  var checkingRegister = (checkMail(registerEmail,idEmailRegister) && (checkPassword(registerPassword.value,idPswRegister) && (checkStateRegister() && checkRepeatedPasswordRegister() ))) ? true : false;
+var checkingRegister
+if(checkMail(registerEmail,idEmailRegister)==false){
+  if(checkPassword(registerPassword.value,idPswRegister)==false){
+    if(checkStateRegister()==false){
+      if(checkRepeatedPasswordRegister()==false){
+        checkingRegister=false
+        return checkingRegister
+      }
+
+    }
+  }
+  checkingRegister=false
+  return checkingRegister
+}
+checkingRegister=true
   return checkingRegister;
 }
  
