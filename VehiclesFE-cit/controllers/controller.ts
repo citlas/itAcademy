@@ -1,4 +1,4 @@
-
+/*
 function createCar(plate:string,brand:string,color:string){
     let car=new Car(plate,color,brand);
     car.addWheel(new Wheel(2,"SEAT"));
@@ -6,31 +6,33 @@ function createCar(plate:string,brand:string,color:string){
     + " COLOR: " +car.color + " BRAND: " + brand 
     + " WHEELS: " + JSON.stringify(car.wheels);
 }
+*/
 
 function createCar2(){
-    let carPlate = document.querySelector('#plate')
-    let carBrand = document.querySelector('#brand')
-    let carColor = document.querySelector('#color')
-
-   
+    document.querySelector('#responseContent')!.innerHTML = ''
     $("#response").removeClass('d-none');
+    createContent('createPlate','plate');
+    createContent('createBrand','brand');
+    createContent('createColor','color');       
+}
+    
+function createContent(carFeature:any,name:string){
+    let plate = (<HTMLInputElement>document.querySelector('#plate'))
+    let brand = (<HTMLInputElement>document.querySelector('#brand'))
+    let color = (<HTMLInputElement>document.querySelector('#color'))
+
     let carContent = document.querySelector('#responseContent');
 
-    document.querySelector('#responseContent').innerHTML = ''
-    
-    let createPlate = document.createElement('p');
-    createPlate.setAttribute("class", "col-3");
+    carFeature = document.createElement('p'); 
+    carFeature.setAttribute("class", "col-3");
 
-    let createBrand = document.createElement('p');
-    createBrand.setAttribute("class", "col-3");
+    if(name=='plate'){
+        carContent!.appendChild(carFeature).textContent = `${name}: ${plate!.value}`;
+    } else if (name=='brand'){
+        carContent!.appendChild(carFeature).textContent = `${name}: ${brand!.value}`;
+    }  else if (name=='color'){
+        carContent!.appendChild(carFeature).textContent = `${name}: ${color!.value}`;
+    }
 
-    let createColor = document.createElement('p');
-    createColor.setAttribute("class", "col-3");
-
-    carContent.appendChild(createPlate).textContent = `Plate: ${carPlate.value}`;
-    carContent.appendChild(createBrand).textContent = `Brand: ${carBrand.value}`;
-    carContent.appendChild(createColor).textContent = `Color: ${carColor.value}`;
-   
-    return true
 }
 
